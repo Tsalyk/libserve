@@ -8,7 +8,7 @@ def launch():
     sock = socket.socket()
     sock.connect(('localhost', 12345))
 
-    name = 'markiian'
+    name = input("Enter your name: ")
     sendMsg(name.encode('866'), sock)
 
     surname = input("Enter your surname: ")
